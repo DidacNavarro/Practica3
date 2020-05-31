@@ -33,10 +33,9 @@
     <string name="noMatch">Your username and password doesn\'t match.</string>
     <string name="plsAgain">Please try again.</string>
     <string name="signIn">SING IN</string>
-    <string name="sing_in">SING IN</string>
-    <string name="todo">TODO</string>
-    <string name="email">Email</string>
-    <string name="sandra_adams_email_com">sandra.adams@email.com</string>
-    <string name="sandra_adams">Sandra Adams</string>
+    <string name="sing_in" translatable="false">SING IN</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="sandra_adams_email_com" translatable="false">sandra.adams@email.com</string>
+    <string name="sandra_adams" translatable="false">Sandra Adams</string>
     <string name="todo">TODO</string>
 </resources>
