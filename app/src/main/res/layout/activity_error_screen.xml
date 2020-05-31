@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErrorScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="177dp"
+        android:layout_height="179dp"
+        android:src="@drawable/error_screen_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="287dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="392dp"
+        android:text="UPS... couldn't Sign In"
+        android:textStyle="bold"
+        android:textColor="@color/gris"
+        android:textSize="16dp"
+        android:paddingLeft="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="400dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="340dp"
+        android:paddingLeft="30dp"
+        android:text="Your username and password doesn't match."
+        android:textColor="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="400dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="312dp"
+        android:paddingLeft="120dp"
+        android:text="Please try again."
+        android:textColor="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTryAgain"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:background="@color/colorFondo"
+        android:text="TRY AGAIN"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="633dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

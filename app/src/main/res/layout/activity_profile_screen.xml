@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileScreen">
+
+    <include
+    android:id="@+id/toolbar_profile"
+    layout="@layout/toolbar_profile"
+    />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="414dp"
+        android:layout_height="228dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/profile_screen"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="408dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="407dp"
+        android:text=" Sandra Adams"
+        android:textColor="@color/gris"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="368dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="341dp"
+        android:paddingLeft="70dp"
+        android:text="sandra.adams@email.com"
+        android:textColor="@color/gris"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="389dp"
+        android:layout_marginBottom="323dp"
+        android:paddingLeft="70dp"
+        android:text="Email"
+        android:textColor="@color/gris" />
+
+
+</RelativeLayout>
