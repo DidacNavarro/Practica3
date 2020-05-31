@@ -38,4 +38,7 @@
     <string name="sandra_adams_email_com" translatable="false">sandra.adams@email.com</string>
     <string name="sandra_adams" translatable="false">Sandra Adams</string>
     <string name="todo">TODO</string>
+    <string name="respuesta">respuesta</string>
+    <string name="open" />
+    <string name="close" />
 </resources>
