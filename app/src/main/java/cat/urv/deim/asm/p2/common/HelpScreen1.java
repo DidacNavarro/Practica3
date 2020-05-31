@@ -1,17 +1,13 @@
 package cat.urv.deim.asm.p2.common;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
-import cat.urv.deim.asm.p2.common.ui.login.LoginActivity;
-import cat.urv.deim.asm.p2.common.ui.login.LoginViewModel;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HelpScreen1 extends AppCompatActivity {
 

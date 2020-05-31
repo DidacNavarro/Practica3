@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Practica3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuracio</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="be_in_touch">Estigues en contacte</string>
+    <string name="skip_tutorial"><![CDATA[Salta el tutorial ->]]></string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Correu</string>
+    <string name="prompt_password">Contrasenya</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Registrar-se</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Usuari no valid</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Error de registre"</string>
+    <string name="todo">TODO</string>
+    <string name="networking">Xarxes</string>
+    <string name="anonymous_user">USUARI ANONIM</string>
+    <string name="dev_community">Dev Community</string>
+    <string name="buttonTryAgain">Reintenta</string>
+    <string name="learn">Aprende</string>
+    <string name="continueAnonim">CONTINUAR ANONIMAMENT</string>
+    <string name="UPScantSign">UPS… no s\'ha pogut registrar</string>
+    <string name="noMatch" tools:ignore="StringEscaping">El teu nom d\'usuario i contrasenya no son correctes.</string>
+    <string name="plsAgain">Si us plau, intenta de nou</string>
+    <string name="signIn">SING IN</string>
+
+</resources>
