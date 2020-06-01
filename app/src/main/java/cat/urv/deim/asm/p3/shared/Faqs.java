@@ -2,6 +2,7 @@ package cat.urv.deim.asm.p3.shared;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ExpandableListView;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -32,21 +34,28 @@ public class Faqs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faqs);
 
+        expandableListView = findViewById(R.id.eListView);
+
+        showList();
+
+        listViewAdapter = new ExpandableListViewAdapter(this, listaPreguntas, listaRespuestas);
+        expandableListView.setAdapter(listViewAdapter);
+
         DataProvider dataProvider;
         //Load data from synthetic origin
-        //dataProvider = DataProvider.getInstance(this.getApplicationContext());
+        dataProvider = DataProvider.getInstance(this.getApplicationContext());
 
         //Override wrapper that's allows to load data from any resource in raw directory of the project
-        dataProvider = DataProvider.getInstance(this.getApplicationContext(),R.raw.faqs,R.raw.news,R.raw.articles,R.raw.events,R.raw.calendar);
+        //dataProvider = DataProvider.getInstance(this.getApplicationContext(),R.raw.faqs,R.raw.news,R.raw.articles,R.raw.events,R.raw.calendar);
 
         List<? extends List> dataLists = new LinkedList<>();
         try {
             Object dataArray[]= {
                     dataProvider.getFaqs(),
                     dataProvider.getNews(),
-                    //dataProvider.getArticles(),
-                    //dataProvider.getEvents(),
-                    //dataProvider.getCalendar()
+                    dataProvider.getArticles(),
+                    dataProvider.getEvents(),
+                    dataProvider.getCalendar()
             };
             for (Object obj:dataArray){
                 ArrayList<Object> list = (ArrayList<Object>) obj;
@@ -156,15 +165,15 @@ public class Faqs extends AppCompatActivity {
     }
 
 
-}
 
-  /*ExpandableListViewAdapter listViewAdapter;
+
+  ExpandableListViewAdapter listViewAdapter;
     ExpandableListView expandableListView;
     List<String> listaPreguntas;
     HashMap<String, List<String>> listaRespuestas;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    /* @Override
+   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faqs);
         expandableListView = findViewById(R.id.eListView);
@@ -174,6 +183,8 @@ public class Faqs extends AppCompatActivity {
         listViewAdapter = new ExpandableListViewAdapter(this, listaPreguntas, listaRespuestas);
         expandableListView.setAdapter(listViewAdapter);
     }
+    */
+
     private void showList() {
         listaPreguntas = new ArrayList<String>();
         listaRespuestas = new HashMap<String, List<String>>();
@@ -187,10 +198,8 @@ public class Faqs extends AppCompatActivity {
         topic1.add("respuesta 1");
 
 
-
         List<String> topic2 = new ArrayList<>();
         topic2.add("respuesta 2");
-
 
 
         List<String> topic3 = new ArrayList<>();
@@ -201,12 +210,11 @@ public class Faqs extends AppCompatActivity {
         topic4.add("respuesta4");
 
 
-
         listaRespuestas.put(listaPreguntas.get(0), topic1);
         listaRespuestas.put(listaPreguntas.get(1), topic2);
         listaRespuestas.put(listaPreguntas.get(2), topic3);
         listaRespuestas.put(listaPreguntas.get(3), topic4);
 
 
-
-   */
+    }
+}

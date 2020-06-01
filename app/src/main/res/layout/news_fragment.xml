@@ -5,9 +5,9 @@
     android:id="@+id/news"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cat.urv.deim.asm.p3.shared.ui.news.NewsDetailActivity">
+    tools:context="cat.urv.deim.asm.p3.shared.ui.news.NewsFragment">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,4 +18,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,18 +27,18 @@
         <activity android:name=".HelpScreen3" />
         <activity android:name=".HelpScreen2" />
         <activity android:name=".HelpScreen1" />
-        <activity android:name=".SplashScreen" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="cat.urv.deim.asm.p3.shared.NewsViewModel" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

@@ -1,10 +1,8 @@
 package cat.urv.deim.asm.p2.common;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +16,8 @@ public class HelpScreen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_screen3);
 
+
+        /*
         //revisa si la aplicacion se abre por primera vez
         SharedPreferences preferences = getSharedPreferences("PREFERENCE", MODE_PRIVATE);
         String FirstTime = preferences.getString("FirstTimeInstall", "" );
@@ -43,6 +43,8 @@ public class HelpScreen3 extends AppCompatActivity {
             }
         });
 
+         */
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -55,8 +57,10 @@ public class HelpScreen3 extends AppCompatActivity {
         },2000);
     }
 
-    public void openLogin(){
+   /* public void openLogin(){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
+
+    */
 }

@@ -41,4 +41,14 @@
     <string name="respuesta">respuesta</string>
     <string name="open" />
     <string name="close" />
+    <string name="faqs">FAQS</string>
+    <string name="settings">Settings</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <string name="calendar">Calendar</string>
+    <string name="events">Events</string>
+    <string name="articles">Articles</string>
+    <string name="news">News</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

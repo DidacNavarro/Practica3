@@ -1,4 +1,4 @@
-package cat.urv.deim.asm.p3.shared.ui.news;
+/*package cat.urv.deim.asm.p3.shared.ui.news;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,7 +14,57 @@ import androidx.fragment.app.Fragment;
 import cat.urv.deim.asm.p2.common.R;
 
 public class NewsFragment extends Fragment {
+    private onFragmentBtnSelected listener;
 
+
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+        View view = inflater.inflate(R.layout.news_fragment,container,false);
+        Button clickme = view.findViewById(R.id.button);
+        clickme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onButtonSelected();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+
+        if(context instanceof onFragmentBtnSelected) {
+            listener = (onFragmentBtnSelected) context;
+        } else {
+            throw new ClassCastException(context.toString()+ "must implement listener");
+        }
+    }
+
+    public interface onFragmentBtnSelected{
+        public void onButtonSelected();
+
+    }
+
+}*/
+
+
+package cat.urv.deim.asm.p3.shared.ui.news;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import cat.urv.deim.asm.p2.common.R;
+
+
+public class NewsFragment extends Fragment {
     private onFragmentBtnSelected listener;
 
 
